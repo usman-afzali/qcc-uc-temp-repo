@@ -25,7 +25,7 @@ bibliography: references.bib
 
 ## Problem 1 {background-color="#346bc8"}
 
-![](/posts/problem1.png){width="70%"}
+![](posts/problem1.png){width="70%"}
 
 ## Problem(s) 2 {background-color="#346bc8"}
 
@@ -46,17 +46,17 @@ Any other similar problems?
 
 ## My favourite(?!) problem {background-color="#346bc8"}
 
-![](/posts/final.jpeg)
+![](posts/final.jpeg)
 
 ## And then... {background-color="#346bc8"}
 
-![](/posts/mc-q.png)
+![](posts/mc-q.png)
 
 # Introduction {background-color="orange"}
 
 ## Quarto {background-color="#346bc8"}
 
-![](/posts/quarto-intro.png)
+![](posts/quarto-intro.png)
 
 [Website](https://quarto.org)
 
@@ -90,7 +90,7 @@ Cut the tyranny of copy-and-paste with these coding tools [@perkel2022]
 
 ## Basics cont... {background-color="#346bc8"}
 
-![](/posts/rstudio-interf-2.png)
+![](posts/rstudio-interf-2.png)
 
 ## Basics cont... {background-color="#346bc8"}
 
@@ -139,13 +139,13 @@ format:
 
 ## Git {background-color="#346bc8"}
 
-![](/posts/git.png)
+![](posts/git.png)
 
 To know more: See [official website](https://www.git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
 
 ## GitHub {background-color="#346bc8"}
 
-![](/posts/github.png)
+![](posts/github.png)
 
 <https://github.com>
 
@@ -227,7 +227,7 @@ format:
 
 ## Sharing slides {background-color="#346bc8"}
 
-1.  Save as pdf: This option only works with `Google Chrome` as explained [here](https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf). Or, see below. ![](/posts/pdf.png)
+1.  Save as pdf: This option only works with `Google Chrome` as explained [here](https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf). Or, see below. ![](posts/pdf.png)
 
 ## Sharing slides {background-color="#346bc8"}
 
