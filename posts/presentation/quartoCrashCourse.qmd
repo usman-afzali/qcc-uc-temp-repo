@@ -80,7 +80,7 @@ Cut the tyranny of copy-and-paste with these coding tools [@perkel2022]
 
 ::: incremental
 -   Use the latest version of `RStudio`, at least `Version: 2022.12.0+353` or later on your computer.
--   Within `RStudio`, click on `new file` drop down menu and open a new `Quarto Document`, and name it. ![RStudio Interface](/posts/r-interface.png)
+-   Within `RStudio`, click on `new file` drop down menu and open a new `Quarto Document`, and name it. ![RStudio Interface](posts/r-interface.png)
 :::
 
 ## Basics cont... {background-color="#346bc8"}
