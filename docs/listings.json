@@ -3,6 +3,8 @@
     "listing": "/index.html",
     "items": [
       "/posts/post-with-code/index.html",
+      "/posts/quarto-demo/qcc-demo.html",
+      "/posts/presentation/quartoCrashCourse.html",
       "/posts/welcome/index.html"
     ]
   }

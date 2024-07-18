@@ -1,0 +1,148 @@
+---
+title: "Basics of Quarto documentation"
+author: "Usman Afzali"
+date: "2024-07-18"
+categories: [quarto, documentation]
+output: 
+  html_document: 
+    theme: cerulean
+    highlight: espresso
+    toc: yes
+    number_sections: yes
+bibliography: references.bib
+---
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+*Italic*
+
+**Bold**
+
+***Bold Italic***
+
+### Listing items
+
+1.  List item 1
+2.  List item 2
+
+### Bullet points
+
+-   bullet 1
+-   bullet 2
+
+#### Inserting a hyperlink
+
+Link: [My website](https://www.usmanafzali.com)
+
+### Embed R code
+
+```{r}
+#| echo: false
+#| include: false
+college <- readr::read_csv('http://672258.youcanlearnit.net/college.csv')
+```
+
+```{r}
+#| echo: false
+#| include: false
+summary(college)
+```
+
+Set some variables as factors.
+
+```{r}
+#| echo: false
+#| include: false
+library(dplyr)
+college <- college %>%
+  mutate(state=as.factor(state), region=as.factor(region),
+         highest_degree=as.factor(highest_degree), control=as.factor(control),
+         gender=as.factor(gender))
+```
+
+see summary again
+
+```{r}
+#| echo: false
+#| include: false
+summary(college)
+```
+
+default loan rate looks problematic. let's find out
+
+```{r}
+#| echo: false
+#| include: false
+unique(college$loan_default_rate)
+```
+
+there is a null and we need to get rid of it
+
+```{r}
+#| echo: false
+#| include: false
+college <- college %>%
+  mutate(loan_default_rate=as.numeric(loan_default_rate))
+```
+
+summary again
+
+```{r}
+#| echo: false
+#| include: false
+summary(college)
+```
+
+looks ok now. there seem to be 2 NA values.
+
+basic plot
+
+```{r}
+#| echo: false
+#| include: false
+library(ggplot2)
+ggplot(data=college) + 
+  geom_point(mapping = aes(x=tuition, y = sat_avg))
+```
+
+there is no much diff. so let's colour instead of shape.
+
+```{r}
+#| echo: false
+#| include: false
+ggplot(data=college) + 
+  geom_point(mapping = aes(x=tuition, y = sat_avg, color = control))
+```
+
+Association between SAT score and tuition fee in the US colleges, factored by institution type and number of students.
+
+```{r}
+#| echo: false
+ggplot(data=college) + 
+  geom_point(mapping = aes(x=tuition, y = sat_avg, color = control, size = undergrads), 
+             alpha=1/2) +
+  annotate("text", label="Elite Privates", x=45000, y=1400) +
+  geom_hline(yintercept=mean(college$sat_avg)) +
+  annotate("text", label="Mean SAT", x=47500, y=mean(college$sat_avg)-15) +
+  geom_vline(xintercept = mean(college$tuition)) +
+  annotate("text", label="Mean Tuition", y=700, x=mean(college$tuition)+7500) +
+  theme(panel.background = element_blank(), legend.key = element_blank()) +
+  scale_color_discrete(name="Institution Type") +
+  scale_size_continuous(name="Undergraduates") +
+  scale_x_continuous(name="Tuition") +
+  scale_y_continuous(name="SAT score")
+```
+
+According to @morton2024 and @ploeg2024
+
+As @morton2024 said...

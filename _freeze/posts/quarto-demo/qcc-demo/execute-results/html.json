@@ -1,0 +1,17 @@
+{
+  "hash": "80865c0ea1db86b2b72de687cae10c9d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Basics of Quarto documentation\"\nauthor: \"Usman Afzali\"\ndate: \"2024-07-18\"\ncategories: [quarto, documentation]\noutput: \n  html_document: \n    theme: cerulean\n    highlight: espresso\n    toc: yes\n    number_sections: yes\nbibliography: references.bib\n---\n\n\n# Heading 1\n\n## Heading 2\n\n### Heading 3\n\n#### Heading 4\n\n##### Heading 5\n\n###### Heading 6\n\n*Italic*\n\n**Bold**\n\n***Bold Italic***\n\n### Listing items\n\n1.  List item 1\n2.  List item 2\n\n### Bullet points\n\n-   bullet 1\n-   bullet 2\n\n#### Inserting a hyperlink\n\nLink: [My website](https://www.usmanafzali.com)\n\n### Embed R code\n\n\n\n\n\n\n\nSet some variables as factors.\n\n\n\n\n\nsee summary again\n\n\n\n\n\ndefault loan rate looks problematic. let's find out\n\n\n\n\n\nthere is a null and we need to get rid of it\n\n\n\n\n\nsummary again\n\n\n\n\n\nlooks ok now. there seem to be 2 NA values.\n\nbasic plot\n\n\n\n\n\nthere is no much diff. so let's colour instead of shape.\n\n\n\n\n\nAssociation between SAT score and tuition fee in the US colleges, factored by institution type and number of students.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](qcc-demo_files/figure-html/unnamed-chunk-10-1.png){width=672}\n:::\n:::\n\n\nAccording to @morton2024 and @ploeg2024\n\nAs @morton2024 said...\n",
+    "supporting": [
+      "qcc-demo_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
